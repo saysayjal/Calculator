@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <!-- Title and stylesheet reference -->
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
@@ -7,6 +8,8 @@
   </head>
 
   <body>
+
+    <!-- Div for the dark mode switch -->
     <div class="switchcontainer">
       <p>DarkMode</p>
       <label class="switch">
@@ -14,7 +17,9 @@
         <span class="slider"></span>
       </label>
     </div>
+    <!-- End of dark mode switch div -->
 
+    <!-- Div for the calculator business or scientific mode setting -->
     <div class="modecontainer">
       <p>CalculatorMode</p>
       <label class="modeswitch">
@@ -22,13 +27,22 @@
         <span class="modeslider"></span>
       </label>
     </div>
+    <!-- End of calculator mode setting div -->
 
+    <!-- Main container div -->
     <div class="container">
+
+    <!-- Main calculator div -->
       <div class="calculator">
+        <!-- Calculator input and display form -->
         <form>
+          <!-- Calculator display div -->
           <div class="display">
             <input type="text" name="display" />
           </div>
+          <!-- End of calculator display div -->
+
+          <!-- FIRST BUTTON ROW -->
           <div>
             <input
               type="button"
@@ -55,6 +69,9 @@
               class="operator"
             />
           </div>
+          <!-- END OF FIRST BUTTON ROW -->
+
+          <!-- SCIENTIFIC BUTTON ROW -->
           <div class="scientific">
             <input
               type="button"
@@ -81,6 +98,9 @@
               class="operator"
             />
           </div>
+          <!-- END OF SCIENTIFIC BUTTON ROW -->
+
+          <!-- NUMERIC AND OPERATOR INPUT SECTION -->
           <div>
             <input type="button" value="7" onclick="display.value += '7' " />
             <input type="button" value="8" onclick="display.value += '8' " />
@@ -124,16 +144,24 @@
               onclick="display.value = eval(display.value) "
             />
           </div>
+          <!-- END OF NUMERIC AND OPERATOR INPUT SECTION -->
         </form>
+        <!-- End of calculator input and display form -->
       </div>
+      <!-- End of calculator container div -->
     </div>
+    <!-- End of main container div -->
 
+    <!-- Scripts handling the dynamic css and button event listeners -->
     <script>
+
+      // Dark mode event handler, responds to the dark mode toggle 
       var dmodeToggle = document.getElementById("dmodeToggle");
       dmodeToggle.onclick = function () {
         document.body.classList.toggle("dark-theme");
       };
 
+      // Calculator mode event handler; hides or shows the scientific div
       var scientificToggle = document.getElementById("scientificToggle");
       var sciencebar = document.querySelector(".scientific");
       sciencebar.style.display = "none";
@@ -146,14 +174,7 @@
           sciencebar.style.display = "none";
         }
       };
-      //   var item = document.querySelector("div.calculator form div");
-      //   const btn = document.createElement("button");
-      //   btn.innerText = "Scientific";
-      //   item.appendChild(btn);
-      //   You can change sources as :
-      // if (document.body.classList.toggle("dark-theme")){
-      //     icon.src = "..."
-      // }
+   
     </script>
   </body>
 </html>

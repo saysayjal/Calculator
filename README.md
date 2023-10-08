@@ -1,13 +1,11 @@
-
 <!-- PROJECT SHIELDS -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -26,10 +24,8 @@
   </p>
 </div>
 
-
-
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://github.com/saysayjal/Calculator)
@@ -37,52 +33,49 @@
 This calculator was made as a task assigned for an entry submission for a fellowship. However, I got too excited and decided to experiment on some fun features which have been included in this project.
 
 They are:
-* Intuitive functionality which can be used by anyone.
-* Transformation toggle for bringing scientific buttons on the default calculator.
-* Addition of a toggle for dark mode for the users at night.
 
-
+- Intuitive functionality which can be used by anyone.
+- Transformation toggle for bringing scientific buttons on the default calculator.
+- Addition of a toggle for dark mode for the users at night.
 
 ### Built With
 
-* [![Html][Html]][Html-url]
-* [![CSS][CSS]][CSS-url]
-* [![JS][JS]][JS-url]
-
+- [![Html][Html]][Html-url]
+- [![CSS][CSS]][CSS-url]
+- [![JS][JS]][JS-url]
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 Clone the repository and open calculator.html, then you're good to go!
 
 <!-- CONTACT -->
+
 ## Contact
 
 Project Link: [https://github.com/saysayjal/Calculator](https://github.com/saysayjal/Calculator)
 
-
-
-
 <!-- ACKNOWLEDGMENTS -->
+
 ## Acknowledgments
 
 The video from GreatStack helped me whenever I got stuck on this project.
 
-* [GreatStack's Video Tutorial](https://www.youtube.com/watch?v=cGgLHJGyS34)
-
-
+- [GreatStack's Video Tutorial](https://www.youtube.com/watch?v=cGgLHJGyS34)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/saysayjal/Calculator
+
+[contributors-shield]: https://img.shields.io/github/contributors/saysayjal/Calculator?style=for-the-badge
 [contributors-url]: https://github.com/saysayjal/Calculator/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/saysayjal/Calculator
+[forks-shield]: https://img.shields.io/github/forks/saysayjal/Calculator?style=for-the-badge
 [forks-url]: https://github.com/saysayjal/Calculator/network/members
-[stars-shield]: https://img.shields.io/github/stars/saysayjal/Calculator
+[stars-shield]: https://img.shields.io/github/stars/saysayjal/Calculator?style=for-the-badge
 [stars-url]: https://github.com/saysayjal/Calculator/stargazers
-[issues-shield]: https://img.shields.io/github/issues/saysayjal/Calculator
+[issues-shield]: https://img.shields.io/github/issues/saysayjal/Calculator?style=for-the-badge
 [issues-url]: https://github.com/saysayjal/Calculator/issues
-[license-shield]: https://img.shields.io/badge/license-MIT-blue
+[license-shield]:https://img.shields.io/badge/License-MIT-yellow.svg
 [license-url]: https://github.com/saysayjal/Calculator/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/saysayjal/

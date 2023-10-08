@@ -7,6 +7,22 @@
   </head>
 
   <body>
+    <div class="switchcontainer">
+      <p>DarkMode</p>
+      <label class="switch">
+        <input type="checkbox" id="dmodeToggle" />
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="modecontainer">
+      <p>CalculatorMode</p>
+      <label class="modeswitch">
+        <input type="checkbox" id="scientificToggle" />
+        <span class="modeslider"></span>
+      </label>
+    </div>
+
     <div class="container">
       <div class="calculator">
         <form>
@@ -111,5 +127,33 @@
         </form>
       </div>
     </div>
+
+    <script>
+      var dmodeToggle = document.getElementById("dmodeToggle");
+      dmodeToggle.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+      };
+
+      var scientificToggle = document.getElementById("scientificToggle");
+      var sciencebar = document.querySelector(".scientific");
+      sciencebar.style.display = "none";
+
+      scientificToggle.onclick = function () {
+        document.body.classList.toggle("modeswitcher");
+        if (sciencebar.style.display == "none") {
+          sciencebar.style.display = "block";
+        } else {
+          sciencebar.style.display = "none";
+        }
+      };
+      //   var item = document.querySelector("div.calculator form div");
+      //   const btn = document.createElement("button");
+      //   btn.innerText = "Scientific";
+      //   item.appendChild(btn);
+      //   You can change sources as :
+      // if (document.body.classList.toggle("dark-theme")){
+      //     icon.src = "..."
+      // }
+    </script>
   </body>
 </html>

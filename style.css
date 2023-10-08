@@ -8,10 +8,18 @@
 :root {
   --primary-color: #e3f9ff;
   --secondary-color: #212121;
+  --dark-mode-image: url("Images/day.png");
+  --calculator-image: url("Images/business.png");
+}
+
+.dark-theme {
+  --primary-color: #000103;
+  --secondary-color: #e3f9ff;
+  --dark-mode-image: url("Images/night.png");
 }
 
 .modeswitcher {
-  --calculator-image: url("scientific.png");
+  --calculator-image: url("Images/scientific.png");
 }
 
 .container {
@@ -66,4 +74,119 @@ form input.operator {
   color: #cd5e77;
 }
 
+.switchcontainer {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
+.modecontainer {
+  position: absolute;
+  top: 0%;
+  right: 36%;
+  text-align: center;
+}
+
+p {
+  font-family: sans-serif;
+  color: var(--secondary-color);
+  margin-bottom: 5px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 60px;
+  margin: 0 10px;
+}
+
+.modeswitch {
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  height: 40px;
+  margin: 0 10px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: var(--dark-mode-image);
+  background-color: #ccc;
+  background-size: 110px 50px;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.modeslider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: var(--calculator-image);
+  background-color: #ccc;
+  background-size: 110px 30px;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.modeslider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 200px;
+  left: 5px;
+  bottom: 5px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.modeswitch input {
+  display: none;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 50px;
+  width: 50px;
+  left: 5px;
+  bottom: 5px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+input:checked + .modeslider {
+  background-color: #ff278c;
+}
+
+input:checked + .modeslider:before {
+  transform: translateX(190px);
+}
+
+input:checked + .slider {
+  background-color: #ff278c;
+}
+
+input:checked + .slider:before {
+  transform: translateX(50px);
+}
+
+.scientific {
+  display: none;
+}
